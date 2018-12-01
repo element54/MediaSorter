@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+}
+
+repositories {
+    mavenCentral()
+}
+
+group = theGroup
+version = theVersion
+sourceCompatibility = theSourceCompatibility
+
+dependencies {
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
+    implementation group: 'commons-cli', name: 'commons-cli', version: '1.4'
+    implementation group: 'com.mpatric', name: 'mp3agic', version: '0.9.1'
+    testImplementation group: 'junit', name: 'junit', version: '4.+'
+}
